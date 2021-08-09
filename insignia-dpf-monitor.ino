@@ -88,15 +88,15 @@ void printDpfStatus() {
 }
 
 int32_t getRegenerationStatus() {
-  return queryVgate(0x22, 0x3274);
+  return queryVgate(0x22, 0x3274); // for B20DTH 0x20FA
 }
 
 int32_t getKmsSinceDpf() {
-  return queryVgate(0x22, 0x3277);
+  return queryVgate(0x22, 0x3277); // for B20DTH 0x3039
 }
 
 int32_t getDpfDirtLevel() {
-  return queryVgate(0x22, 0x3275);
+  return queryVgate(0x22, 0x3275); // for B20DTH 0x336A
 }
 
 
